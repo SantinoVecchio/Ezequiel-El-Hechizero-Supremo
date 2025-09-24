@@ -1,3 +1,51 @@
- *{
+.prueba {
+    color: rgb(123, 0, 255);
+    padding: 20px;
+    margin: 50px;
+    border: 3px solid;
+    font-style: italic;
+    font-weight: bolder;
+    z-index: -1;
+    position: fixed top 20px;
 }
-*
+
+/* es para ignorar multilinea y hacer comentarios */
+
+.prueba2 {
+    font-weight: bold;
+    /* grosor */
+    height: max-content;
+    /* altura */
+    background-color: blue;
+    /* color de fondo */
+    padding: 20px;
+    margin: 50px;
+    border: 3px solid;
+}
+
+.prueba3 {
+    font-weight: bold;
+    /* grosor */
+    height: max-content;
+    /* altura */
+    background-color: blue;
+    /* color de fondo */
+    padding: 20px;
+    margin: 50px;
+    border: 3px solid;
+    /* position: relative; */
+    top: 20px;
+}
+
+.prueba4 {
+    font-weight: bold;
+    /* grosor */
+    height: max-content;
+    /* altura */
+    background-color: rgb(0, 255, 149);
+    /* color de fondo */
+    padding: 20px;
+    margin: 50px;
+    border: 3px solid;
+    position: absolute;
+}
