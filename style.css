@@ -6,7 +6,17 @@
     font-style: italic;
     font-weight: bolder;
     z-index: -1;
-    position: fixed top 20px;
+    position: 100px absolute;
+}
+
+.prueba7 {
+    color: rgb(123, 0, 255);
+    padding: 20px;
+    margin: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    z-index: -1;
+    position: 100px absolute;
 }
 
 /* es para ignorar multilinea y hacer comentarios */
@@ -16,7 +26,7 @@
     /* grosor */
     height: max-content;
     /* altura */
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     /* color de fondo */
     padding: 20px;
     margin: 50px;
@@ -48,4 +58,73 @@
     margin: 50px;
     border: 3px solid;
     position: absolute;
+}
+
+.prueba5 {
+    background-color: beige;
+    border: 3px beige;
+    border-radius: 2px;
+}
+
+.magico {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 3rem;
+    color: #f4e3c1;
+    text-align: center;
+    text-shadow: 0 0 8px #ff0000, 0 0 15px #cc0000, 0 0 25px #990000;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 0px;
+    border-top: 2px solid #ff0000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #222;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.italic {
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+/* el primer quiebre para pantallas es en 480 por eso se usa 481px*/
+
+.parent {
+    background-color: #1312121e;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid;
+    justify-content: center;    /* space-around space-between */
+align-items: center;
+gap: 10px;
+}
+
+.children {
+    border: 2px solid;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.children:nth-last-child(even){
+    width: 50px;
+    height: 50px;
+    background-color: red;
+
+}
+
+/* responsive media sirve para eso */
+@media screen and (min-width: 480px) {
+    .parent {
+        background-color: rgb(0, 0, 0);
+        flex-direction: row;
+    }
+
 }
