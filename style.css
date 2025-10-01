@@ -69,28 +69,81 @@
 .magico {
     font-family: 'MedievalSharp', cursive;
     font-size: 3rem;
-    color: #f4e3c1;
+    color: #000000; /* título violeta brillante */
     text-align: center;
-    text-shadow: 0 0 8px #ff0000, 0 0 15px #cc0000, 0 0 25px #990000;
-    background-color: #000000;
-    padding: 40px;
+     text-shadow: 
+        0 0 8px #00ffcc,
+        0 0 20px #00ccff,
+        0 0 20px #00ffff,
+        0 0 20px #33ffff;
+    padding: 5px;
     border-radius: 0px;
-    border-top: 2px solid #ff0000;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    color: #222;
-    background-color: #fafafa;
-    padding: 20px;
+.magico ul {
+    list-style: none;  /* Saca los puntitos */
+    padding: 0;        /* Saca espacio de la izquierda */
+    margin: 0;
+}
+
+.magico li {
+    margin: 5px 0;    /* Espaciado entre capítulos */
+}
+
+.magico a {
+    font-size: 2rem;
+    color: #4dd0e1; /* celeste arcano */
+    text-decoration: none;
+    text-shadow: 0 0 8px #00ffcc, 0 0 15px #00b3b3, 0 0 30px #008080;
+}
+
+.magico a:hover {
+    color: #ffb347; /* cambia a dorado mágico al pasar el mouse */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff8800;
 }
 
 .italic {
     font-style: italic;
     font-family: "Times New Roman", serif;
     font-size: 20px;
+    border-radius: 1px;
 }
+
+.parrafo {
+    background: linear-gradient(180deg, #0d0d1a, #1a0033, #26004d);
+    border-radius: 1px;
+}
+
+.magico-footer {
+    width: 100%;
+    background: #0d0d1a;
+    color: #e0e0ff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'MedievalSharp', cursive;
+    border-top: 2px solid #4dd0e1;
+}
+
+
+.magico-footer p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    font-weight: bold; /* ahora más grueso y definido */
+}
+
+.magico-footer .dedicado {
+    font-style: italic;
+    color: #ffb347; /* dorado cálido */
+    font-weight: bold;
+}
+
+.magico-footer .rights {
+    font-size: 0.9rem;
+    color: #aaa; /* gris suave */
+    font-weight: normal; /* este más discreto */
+}
+
+
 
 /* el primer quiebre para pantallas es en 480 por eso se usa 481px*/
 
@@ -100,9 +153,10 @@ body {
     flex-direction: column;
     width: 100%;
     border: 2px solid;
-    justify-content: center;    /* space-around space-between */
-align-items: center;
-gap: 10px;
+    justify-content: center;
+    /* space-around space-between */
+    align-items: center;
+    gap: 10px;
 }
 
 .children {
@@ -113,11 +167,24 @@ gap: 10px;
     background-color: blue;
 }
 
-.children:nth-last-child(even){
+.children:nth-last-child(even) {
     width: 50px;
     height: 50px;
     background-color: red;
 
+}
+h1 {
+    color: #f5f5f5; /* color claro */
+    text-align: center;
+}
+
+/* Subtítulos / párrafos importantes */
+h3 {
+    color: #e0e0e0; /* un gris claro, menos intenso que h1 */
+    line-height: 1.6;
+}
+.p {
+    color: white;
 }
 
 /* responsive media sirve para eso */
