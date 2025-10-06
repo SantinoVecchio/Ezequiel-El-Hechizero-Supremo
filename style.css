@@ -1,0 +1,33 @@
+/* como poner y quitar clases y como poner y quitar estilos */
+
+.verde {
+    color: green;
+    height: 10px;
+    width: 10px;
+}
+
+.rojo {
+    color: red;
+    height: 10px;
+    width: 10px;
+}
+
+.grilla {
+    display: flex;
+flex-direction: column;
+gap: 20px;
+outline: 20px;
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    outline: red 1px solid; 
+    /* outline va por afuera del margin y no cuenta  */
+}

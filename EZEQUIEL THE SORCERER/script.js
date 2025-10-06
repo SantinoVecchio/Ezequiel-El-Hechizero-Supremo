@@ -1,10 +1,10 @@
-// const button =document.getElementById("submit")
-// const input =document.getElementById("texto")
-// console.log(button)
-// button.onclick = (e) =>{
-//     e.preventDefault()
-//     console.log(input.value)
-// }
+const button =document.getElementById("submit")
+const input =document.getElementById("texto")
+console.log(button)
+button.onclick = (e) =>{
+    e.preventDefault()
+    console.log(input.value)
+}
 
 const nombre = "Ezequiel"
 let edad = 15
