@@ -1,95 +1,129 @@
- body {
-     font-family: "Poppins", sans-serif;
-     background-color: #f9f5f1;
-     color: #3c2f2f;
-     margin: 0;
-     padding: 0;
- }
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f5f1;
+    color: #3c2f2f;
+    margin: 0;
+    padding: 0;
+}
 
- header {
-     background-color: #c59d5f;
-     color: white;
-     text-align: center;
-     padding: 20px 0;
- }
+header {
+    background-color: #c59d5f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
- h1 {
-     margin: 0;
- }
+h1 {
+    margin: 0;
+}
 
- main {
-     padding: 30px;
-     max-width: 1400px;
-     margin: 0 auto;
- }
+main {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
- h2 {
-     text-align: center;
-     margin-top: 40px;
-     color: #5b3a29;
- }
+h2 {
+    text-align: center;
+    color: #5b3a29;
+}
 
- .menu {
-     display: flex;
-     flex-direction: column;
-     gap: 40px;
- }
+.menu {
+    display: grid;
+    /* Cambiado a Grid para un control más preciso de filas y columnas */
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas de igual ancho */
+    gap: 40px;
+    /* Espacio entre las secciones */
+}
 
- .section {
-     background-color: #fff;
-     padding: 20px;
-     border-radius: 16px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     border-top: 4px solid brown;
- }
+/* Colores de fondo específicos para cada sección */
+.section.cafeteria {
+    background-color: #e0d9d9;
+    /* Color más claro para la cafetería */
+    border-top: 4px solid #a38c7d;
+    /* Borde superior en tono marrón */
+}
 
- .item {
-     background-color: #fff8f3;
-     border: 2px solid #f1dfd0;
-     border-radius: 12px;
-     padding: 15px 20px;
-     margin: 15px 0;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     cursor: pointer;
-     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s;
- }
+.section.panaderia {
+    background-color: #e6a751;
+    /* Color anaranjado para la panadería */
+    border-top: 4px solid #c5863c;
+    /* Borde superior más oscuro */
+}
 
- .item:hover {
-     transform: scale(1.05);
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-     background-color: #ffeeda;
- }
+.section.pasteleria {
+    background-color: #c993c9;
+    /* Color morado para la pastelería */
+    border-top: 4px solid #a072a0;
+    /* Borde superior más oscuro */
+}
 
- .item strong {
-     font-size: 18px;
- }
+.section.te {
+    background-color: #8ed68e;
+    /* Color verde para el té */
+    border-top: 4px solid #6cb96c;
+    /* Borde superior más oscuro */
+}
 
- .item p {
-     margin: 5px 0 0 0;
-     font-size: 14px;
-     color: #6d5b4b;
- }
+/* Estilos genéricos para las secciones (se aplican a todas) */
 
- .item span {
-     font-weight: bold;
-     color: #3c2f2f;
- }
+.section {
+    padding: 0px 20px 20px;
+    /* Ejemplo: 10px arriba, 20px a los lados, 20px abajo */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
- .nota {
-     font-size: 12px;
-     margin-top: 10px;
-     text-align: center;
- }
+.item {
+    background-color: #fff8f3;
+    border: 2px solid #f1dfd0;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s;
+}
 
- @media screen and (min-width: 480px) {
-     .menu {
-         flex-direction: row;
-         flex-wrap: wrap;
-         align-items: stretch;
-     }
-     .section{
-        flex-basis: max (400px , calc(50% - 40px));
-     }
- }
+.item:hover {
+    transform: scale(1.02);
+    /* Escala ligeramente en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #ffeeda;
+}
+
+.item strong {
+    font-size: 18px;
+}
+
+.item p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #6d5b4b;
+}
+
+.item span {
+    font-weight: bold;
+    color: #3c2f2f;
+}
+
+.nota {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* La media query ya no es necesaria con CSS Grid para este diseño simple de 2 columnas */
+/* Puedes quitar el bloque @media si solo quieres este diseño */
+/* Si necesitas un diseño diferente para pantallas pequeñas, ajusta .menu en la media query */
+@media screen and (max-width: 768px) {
+
+    /* Por ejemplo, para pantallas más pequeñas de 768px */
+    .menu {
+        grid-template-columns: 1fr;
+        /* Una sola columna en pantallas más pequeñas */
+    }
+}
